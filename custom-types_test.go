@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/fastleansmart/grafana-sdk"
+	"github.com/K-Phoen/sdk"
 )
 
 func TestIntString_Unmarshal(t *testing.T) {
