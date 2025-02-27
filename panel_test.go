@@ -24,7 +24,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/K-Phoen/sdk"
+	sdk "github.com/fastleansmart/grafana-sdk"
 )
 
 func TestStackVal_UnmarshalJSON_GotTrue(t *testing.T) {

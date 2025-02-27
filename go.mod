@@ -1,4 +1,4 @@
-module github.com/K-Phoen/sdk
+module github.com/fastleansmart/grafana-sdk
 
 go 1.19
 
