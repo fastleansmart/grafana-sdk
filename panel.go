@@ -636,6 +636,9 @@ type Target struct {
 	TimeSeriesQuery *GCMTimeSeriesQuery `json:"timeSeriesQuery,omitempty"`
 	PromQLQuery     *GCMPromQLQuery     `json:"promQLQuery,omitempty"`
 	SLOQuery        *GCMSLOQuery        `json:"sloQuery,omitempty"`
+
+	// For Dashboard data source
+	PanelID uint `json:"panelId,omitempty"`
 }
 
 type GCMTimeSeriesList struct {
