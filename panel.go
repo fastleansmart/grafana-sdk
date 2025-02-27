@@ -105,11 +105,12 @@ type (
 			Text     string `json:"text"`
 			Value    string `json:"value"`
 		} `json:"scopedVars,omitempty"`
-		Span        float32 `json:"span"`                  // general
-		Title       string  `json:"title"`                 // general
-		Description *string `json:"description,omitempty"` // general
-		Transparent bool    `json:"transparent"`
-		Type        string  `json:"type"`
+		Span            float32           `json:"span"`                  // general
+		Title           string            `json:"title"`                 // general
+		Description     *string           `json:"description,omitempty"` // general
+		Transparent     bool              `json:"transparent"`
+		Type            string            `json:"type"`
+		Transformations []json.RawMessage `json:"transformations,omitempty"`
 	}
 	GraphPanel struct {
 		AliasColors interface{} `json:"aliasColors"` // XXX
