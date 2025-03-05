@@ -367,8 +367,8 @@ type (
 	}
 	FieldConfigOverride struct {
 		Matcher struct {
-			ID      string `json:"id"`
-			Options string `json:"options"`
+			ID      string      `json:"id"`
+			Options interface{} `json:"options"`
 		} `json:"matcher"`
 		Properties []FieldConfigOverrideProperty `json:"properties"`
 	}
