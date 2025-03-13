@@ -649,7 +649,8 @@ type Target struct {
 	} `json:"filter,omitempty"`
 
 	// For Expression data source
-	Type string `json:"type,omitempty"`
+	Type       string `json:"type,omitempty"`
+	Expression string `json:"expression,omitempty"`
 }
 
 type GCMTimeSeriesList struct {
