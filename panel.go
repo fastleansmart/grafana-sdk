@@ -646,7 +646,7 @@ type Target struct {
 	Buffer  uint   `json:"buffer,omitempty"`
 	Filter  struct {
 		Fields []string `json:"fields,omitempty"`
-	} `json:"filter:omitempty"`
+	} `json:"filter,omitempty"`
 }
 
 type GCMTimeSeriesList struct {
