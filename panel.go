@@ -647,6 +647,9 @@ type Target struct {
 	Filter  struct {
 		Fields []string `json:"fields,omitempty"`
 	} `json:"filter,omitempty"`
+
+	// For Expression data source
+	Type string `json:"type,omitempty"`
 }
 
 type GCMTimeSeriesList struct {
