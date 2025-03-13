@@ -639,6 +639,14 @@ type Target struct {
 
 	// For Dashboard data source
 	PanelID uint `json:"panelId,omitempty"`
+
+	// For Grafana data source
+	Channel string `json:"channel,omitempty"`
+	Path    string `json:"path,omitempty"`
+	Buffer  uint   `json:"buffer,omitempty"`
+	Filter  struct {
+		Fields []string `json:"fields,omitempty"`
+	} `json:"filter:omitempty"`
 }
 
 type GCMTimeSeriesList struct {
