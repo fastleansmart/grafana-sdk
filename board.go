@@ -128,7 +128,7 @@ type (
 		Tags        []string           `json:"tags"`
 		TagKeys     string             `json:"tagKeys"`
 		Type        string             `json:"type"`
-		Filter      []AnnotationFilter `json:"filter"`
+		Filter      AnnotationFilter `json:"filter"`
 		Hide        bool               `json:"hide"`
 	}
 
