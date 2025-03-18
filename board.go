@@ -111,25 +111,25 @@ type (
 		Value interface{}        `json:"value"` // TODO select more precise type
 	}
 	Annotation struct {
-		Name        string             `json:"name"`
-		Datasource  *DatasourceRef     `json:"datasource"`
-		ShowLine    bool               `json:"showLine"`
-		IconColor   string             `json:"iconColor"`
-		LineColor   string             `json:"lineColor"`
-		IconSize    uint               `json:"iconSize"`
-		Enable      bool               `json:"enable"`
-		Query       string             `json:"query"`
-		Expr        string             `json:"expr"`
-		Step        string             `json:"step"`
-		TextField   string             `json:"textField"`
-		TextFormat  string             `json:"textFormat"`
-		TitleFormat string             `json:"titleFormat"`
-		TagsField   string             `json:"tagsField"`
-		Tags        []string           `json:"tags"`
-		TagKeys     string             `json:"tagKeys"`
-		Type        string             `json:"type"`
+		Name        string           `json:"name"`
+		Datasource  *DatasourceRef   `json:"datasource"`
+		ShowLine    bool             `json:"showLine"`
+		IconColor   string           `json:"iconColor"`
+		LineColor   string           `json:"lineColor"`
+		IconSize    uint             `json:"iconSize"`
+		Enable      bool             `json:"enable"`
+		Query       string           `json:"query"`
+		Expr        string           `json:"expr"`
+		Step        string           `json:"step"`
+		TextField   string           `json:"textField"`
+		TextFormat  string           `json:"textFormat"`
+		TitleFormat string           `json:"titleFormat"`
+		TagsField   string           `json:"tagsField"`
+		Tags        []string         `json:"tags"`
+		TagKeys     string           `json:"tagKeys"`
+		Type        string           `json:"type"`
 		Filter      AnnotationFilter `json:"filter"`
-		Hide        bool               `json:"hide"`
+		Hide        bool             `json:"hide"`
 	}
 
 	// For Annotation
@@ -238,6 +238,7 @@ func (b *Board) AddRow(title string) *Row {
 		Collapse: false,
 		Editable: true,
 		Height:   "250px",
+		Panels:   []Panel{},
 	}
 	b.Rows = append(b.Rows, row)
 	return row
