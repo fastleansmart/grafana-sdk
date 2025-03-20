@@ -111,6 +111,7 @@ type (
 		Transparent     bool              `json:"transparent"`
 		Type            string            `json:"type"`
 		Transformations []json.RawMessage `json:"transformations,omitempty"`
+		MinInterval     string            `json:"interval,omitempty"`
 	}
 	GraphPanel struct {
 		AliasColors interface{} `json:"aliasColors"` // XXX
